@@ -7,9 +7,9 @@ class BookList extends Component {
     return (
       <Container style={{ marginTop: this.props.marginTop || 0 }}>
         <Row>
-          <BookSearch />
+          <BookSearch books={BookList} />
         </Row>
-        <Row className="row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-3">{this.searchBooks()}</Row>
+        <Row className="row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-3">{BookSearch.getFilteredBooksComponents()}</Row>
       </Container>
     )
   }
