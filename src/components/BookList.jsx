@@ -25,6 +25,7 @@ class BookList extends Component {
     })
   }
 
+  // ad ogni cambiamento di stato e props, il metodo render del componente viene eseguito
   render() {
     return (
       <Container style={{ marginTop: this.props.marginTop || 0 }}>
